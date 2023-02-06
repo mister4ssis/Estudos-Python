@@ -1,0 +1,18 @@
+import carro,moto
+
+car = moto.Moto("Vermelho", 4, "flex", "1.0")
+car2 = carro.Carro("Azul", 4, "flex", "1.0")
+print(car2.cor)
+print(car.qtdPortas)
+print(car.tipoCombustivel)
+print(car.potencia)
+car.abastecer(20)
+car.abastecer(15)
+car.abastecer(5)
+car.abastecer(1)
+car.ligar()
+car.ligar()
+car.desligar(25)
+car.desligar(5)
+print(car.qtdCombustivel)
+print(type(car.qtdPortas))
