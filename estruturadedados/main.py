@@ -1,4 +1,3 @@
-from array import array
 from vetores import vetor
 from listas import lista_ligada
 from listas import lista_duplamente_ligada
@@ -6,7 +5,7 @@ from pilhas import pilhas
 from filas import filas
 from conjuntos import conjunto
 
-print(30*'-', "MENU", 30*'-')
+print(30 * '-', "MENU", 30 * '-')
 print('1. Vetores')
 print('2. Lista Ligadas')
 print('3. listas Duplamente Ligadas')
@@ -32,29 +31,29 @@ if menu == 1:
     print(vetor_teste)
     vetor_teste.remover_elemento(2)
     print(vetor_teste)
-elif menu==2:
+elif menu == 2:
     lista_teste = lista_ligada.ListaLigada()
     lista_teste.inserir_elemento(1)
     lista_teste.inserir_elemento(2)
     lista_teste.inserir_elemento(2)
-    lista_teste.inserir_elemento_posicao(0,4)
-    lista_teste.inserir_elemento_posicao(4,6)
-    lista_teste.inserir_elemento_posicao(2,15)
+    lista_teste.inserir_elemento_posicao(0, 4)
+    lista_teste.inserir_elemento_posicao(4, 6)
+    lista_teste.inserir_elemento_posicao(2, 15)
     print(lista_teste)
     lista_teste.remover_posicao(0)
     print(lista_teste)
     lista_teste.remover_elemento(15)
     print(lista_teste)
     print(lista_teste.indice(15))
-elif menu ==3:
+elif menu == 3:
     lista_teste = lista_duplamente_ligada.ListaDuplamenteLigada()
 
     lista_teste.inserir_elemento(1)
     lista_teste.inserir_elemento(2)
     lista_teste.inserir_elemento(2)
-    lista_teste.inserir_elemento_posicao(0,4)
-    lista_teste.inserir_elemento_posicao(4,6)
-    lista_teste.inserir_elemento_posicao(2,15)
+    lista_teste.inserir_elemento_posicao(0, 4)
+    lista_teste.inserir_elemento_posicao(4, 6)
+    lista_teste.inserir_elemento_posicao(2, 15)
     print(lista_teste)
     lista_teste.remover_posicao(0)
     print(lista_teste)
@@ -78,11 +77,14 @@ elif menu == 5:
     print(fila_teste)
 elif menu == 6:
     conjunto_teste = conjunto.Conjunto()
-    conjunto_teste.inserir(1)
-    conjunto_teste.inserir(2)
-    conjunto_teste.inserir(3)
-    conjunto_teste.inserir(4)
-    print(conjunto_teste.tamanho())
+    conjunto_teste.inserir(11)
+    conjunto_teste.inserir(21)
+    conjunto_teste.inserir(12)
+    conjunto_teste.inserir(22)
+    conjunto_teste.inserir(13)
+    conjunto_teste.inserir(23)
+    conjunto_teste.inserir(14)
+    conjunto_teste.inserir(24)
+    conjunto_teste.inserir(15)
+    conjunto_teste.inserir(25)
     print(conjunto_teste)
-
-
