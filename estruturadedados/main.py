@@ -4,6 +4,7 @@ from listas import lista_ligada
 from listas import lista_duplamente_ligada
 from pilhas import pilhas
 from filas import filas
+from conjuntos import conjunto
 
 print(30*'-', "MENU", 30*'-')
 print('1. Vetores')
@@ -11,9 +12,10 @@ print('2. Lista Ligadas')
 print('3. listas Duplamente Ligadas')
 print('4. Pilhas')
 print('5. Filas')
+print('6. Conjuntos')
 
 # menu = int(input("Digite a opção desejada: "))
-menu = 5
+menu = 6
 if menu == 1:
     vetor_teste = vetor.Vetor(3)
     # vetor_teste.inserir_elemento_posicao(1,0)
@@ -74,5 +76,13 @@ elif menu == 5:
     print(fila_teste.desinfileirar())
     print(fila_teste.desinfileirar())
     print(fila_teste)
+elif menu == 6:
+    conjunto_teste = conjunto.Conjunto()
+    conjunto_teste.inserir(1)
+    conjunto_teste.inserir(2)
+    conjunto_teste.inserir(3)
+    conjunto_teste.inserir(4)
+    print(conjunto_teste.tamanho())
+    print(conjunto_teste)
 
 
